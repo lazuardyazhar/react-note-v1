@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './App.css'
 import './index.css'
-import NoteList from './components/NoteList.jsx'
-
+import AppRouter from './AppRouter'
+import { NoteProvider } from './contexts/NoteContext'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <NoteList />
+    <NoteProvider>
+      <AppRouter/>
+    </NoteProvider>
   </React.StrictMode>,
 )
