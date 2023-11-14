@@ -1,24 +1,33 @@
-@keyframes fade-in{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.animate-fade-in{
-  animation: fade-in 0.5s ease-in-out;
+body {
+  background-color: #FAE7C9
 }
 
-.animate-slide-up{
-  animation: slide-up 0.5s ease-in-out;
+@keyframes tilt {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  50% {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
 }
 
-@keyframes slide-up {
-  from{
-    transform: translateY(50px);
-  }
-  to{
-    transform: translateY(0);
-  }
+.animate-tilt {
+  animation: tilt 2s infinite alternate;
+}
+.animate-hover-bg-brown {
+  transition: background-color 0.3s ease-in-out;
+}
+.animate-hover-bg-brown:hover {
+  background-color: #8B4513;
+}
+.border-daftar-catatan {
+  border: 2px solid #C8AE7D;
+  border-radius: 10px;
+  padding: 10px; 
+  background-color: #C8AE7D; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
